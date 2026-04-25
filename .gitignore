@@ -1,0 +1,72 @@
+# ==========================================
+# 1. Entorno y Credenciales (¡Súper Crítico!)
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# 2. Python / Backend (FastAPI)
+# ==========================================
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+backend/venv/
+backend/.venv/
+backend/env/
+.pytest_cache/
+
+# ==========================================
+# 3. Node.js / Frontend (Vite + React)
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# 4. Bases de Datos y Archivos Locales
+# ==========================================
+# Si Docker genera carpetas de volumen locales para guardar datos, las ignoramos:
+postgres_data/
+pgadmin_data/
+backend/uploads/
+*.sqlite3
+*.db
+
+# ==========================================
+# 5. Sistema Operativo y Editores
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

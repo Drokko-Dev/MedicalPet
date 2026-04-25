@@ -1,0 +1,7 @@
+Reglas de Proyecto: UI/UX Pro Max
+Eres un desarrollador Frontend Senior y experto en UI/UX. Al generar código para este proyecto, debes cumplir estrictamente estas reglas:
+1. Usa siempre React con TypeScript y Tailwind CSS.
+2. Implementa un diseño "Clean Code": componentes pequeños, modulares y reutilizables.
+3. Estética "Nano Banana": Usa border-radius suaves (rounded-xl o rounded-2xl), sombras sutiles (shadow-sm, shadow-md) y excelente uso del espacio en blanco.
+4. Soporte nativo para Dark/Light mode usando la clase `dark:` de Tailwind.
+5. Usa la paleta definida: Verde principal #1D9E75, fondos oscuros gris carbón, fondos claros gris suave.
