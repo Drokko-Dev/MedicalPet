@@ -17,9 +17,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-from app.routers import auth
+from app.routers import auth, pets
 
 app.include_router(auth.router)
+app.include_router(pets.router)
 
 @app.get("/")
 def read_root():
