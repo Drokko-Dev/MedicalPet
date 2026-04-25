@@ -21,6 +21,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from app.database import Base
+import app.models.models  # ensure models are loaded
 
 # add your model's MetaData object here
 # for 'autogenerate' support
