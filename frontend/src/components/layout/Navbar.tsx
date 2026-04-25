@@ -43,8 +43,8 @@ export function Navbar() {
                   Pacientes
                 </Link>
               )}
-              <Link to="/agenda" className="text-[var(--color-text-muted)] hover:text-[var(--color-brand-green)] transition-colors font-medium">
-                Agenda
+              <Link to="/alerts" className="text-[var(--color-text-muted)] hover:text-[var(--color-brand-green)] transition-colors font-medium">
+                Alertas
               </Link>
             </div>
           )}

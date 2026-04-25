@@ -7,6 +7,8 @@ import { RoleRoute } from './components/auth/RoleRoute';
 import { useAuthStore } from './store/useAuthStore';
 import { DashboardOwnerPage } from './pages/owner/DashboardOwnerPage';
 import { PetsPage } from './pages/owner/PetsPage';
+import { PetDetailPage } from './pages/owner/PetDetailPage';
+import { AlertsPage } from './pages/owner/AlertsPage';
 
 function DashboardPlaceholder({ title }: { title: string }) {
   return (
@@ -45,6 +47,8 @@ function App() {
             <Route element={<RoleRoute allowedRole="owner" />}>
               <Route path="/dashboard" element={<DashboardOwnerPage />} />
               <Route path="/pets" element={<PetsPage />} />
+              <Route path="/pets/:id" element={<PetDetailPage />} />
+              <Route path="/alerts" element={<AlertsPage />} />
             </Route>
 
             {/* Vet Routes */}
@@ -52,9 +56,6 @@ function App() {
               <Route path="/vet/dashboard" element={<DashboardPlaceholder title="Panel Médico (Veterinario)" />} />
               <Route path="/vet/patients" element={<DashboardPlaceholder title="Mis Pacientes" />} />
             </Route>
-            
-            {/* Shared Routes */}
-            <Route path="/agenda" element={<DashboardPlaceholder title="Agenda" />} />
 
           </Route>
 
