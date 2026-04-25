@@ -5,6 +5,8 @@ import { RegisterPage } from './pages/auth/RegisterPage';
 import { PrivateRoute } from './components/auth/PrivateRoute';
 import { RoleRoute } from './components/auth/RoleRoute';
 import { useAuthStore } from './store/useAuthStore';
+import { DashboardOwnerPage } from './pages/owner/DashboardOwnerPage';
+import { PetsPage } from './pages/owner/PetsPage';
 
 function DashboardPlaceholder({ title }: { title: string }) {
   return (
@@ -41,8 +43,8 @@ function App() {
             
             {/* Owner Routes */}
             <Route element={<RoleRoute allowedRole="owner" />}>
-              <Route path="/dashboard" element={<DashboardPlaceholder title="Dashboard (Dueño)" />} />
-              <Route path="/pets" element={<DashboardPlaceholder title="Mis Mascotas" />} />
+              <Route path="/dashboard" element={<DashboardOwnerPage />} />
+              <Route path="/pets" element={<PetsPage />} />
             </Route>
 
             {/* Vet Routes */}
